@@ -1,3 +1,8 @@
+
+Kyle Carlson <kipalekyle@gmail.com>
+10:04 AM (10 hours ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,22 +27,43 @@
     }
     #output {
       margin-top: 20px;
-      font-size: 2rem;
+      font-size: 3rem; /* Made the font slightly larger */
+      font-weight: bold;
       color: #333;
+      /* Smoothly handles transitions when styles change */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
+
   <button onclick="showReal()">Press me</button>
   <div id="output"></div>
 
   <script>
     function showReal() {
-      document.getElementById("output").textContent = "real";
+      const outputElement = document.getElementById("output");
+     
+      // 1. Change the text
+      outputElement.textContent = "real";
+     
+      // 2. Change text styles so it is readable over fire
+      outputElement.style.color = "white";
+      outputElement.style.textShadow = "3px 3px 6px rgba(0, 0, 0, 0.9)";
+     
+      // 3. Give the box a specific size for the background picture
+      outputElement.style.width = "300px";
+      outputElement.style.height = "200px";
+     
+      // 4. Add the explosion picture behind the text
+      outputElement.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original')";
+      outputElement.style.backgroundSize = "cover";
+      outputElement.style.backgroundPosition = "center";
     }
   </script>
+
 </body>
 </html>
-
-
-
