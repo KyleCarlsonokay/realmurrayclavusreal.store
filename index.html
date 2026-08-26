@@ -1,69 +1,177 @@
-
-Kyle Carlson <kipalekyle@gmail.com>
-10:04 AM (10 hours ago)
-to me
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Realmurrayclavus Button</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #f4f4f4;
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-    #output {
-      margin-top: 20px;
-      font-size: 3rem; /* Made the font slightly larger */
-      font-weight: bold;
-      color: #333;
-      /* Smoothly handles transitions when styles change */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-    }
-  </style>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1f4068, #162447);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5e0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        section h2 {
+            color: #1f4068;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+        .skills-list li {
+            background: #e2e8f0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .project h3 {
+            color: #162447;
+            margin-bottom: 5px;
+        }
+        .project a {
+            color: #30475e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
 
-  <button onclick="showReal()">Press me</button>
-  <div id="output"></div>
+    <header>
+        <!-- Change your name and subtitle here -->
+        <h1>Kyle Carlson</h1>
+        <p>Musician, Songwriter, Photographer, Engineer, Professional Chef,  &amp; Designer of many things</p>
+    </header>
 
-  <script>
-    function showReal() {
-      const outputElement = document.getElementById("output");
-     
-      // 1. Change the text
-      outputElement.textContent = "real";
-     
-      // 2. Change text styles so it is readable over fire
-      outputElement.style.color = "white";
-      outputElement.style.textShadow = "3px 3px 6px rgba(0, 0, 0, 0.9)";
-     
-      // 3. Give the box a specific size for the background picture
-      outputElement.style.width = "300px";
-      outputElement.style.height = "200px";
-     
-      // 4. Add the explosion picture behind the text
-      outputElement.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original')";
-      outputElement.style.backgroundSize = "cover";
-      outputElement.style.backgroundPosition = "center";
-    }
-  </script>
+    <div class="container">
+       
+        <section id="about">
+            <h2>About Me</h2>
+           
+            <p> My name is Kyle Carlson. I have many skills, but they mostly consist of playing music, songwriting, and technology related abilities. I've dabbled in photoshop, web design, coding, 3D graphics and animation, game development, and video production. I get my inspiration from my two cats and the mountains of Switzerland. I play 12 instruments and have multiple bands, as well as running the TacoBellEnthusiasts Spotify and Apple Music account. Favorite games are Portal 2, Minecraft, and Hollow Knight.</p>
+        </section>
 
-</body>
-</html>
+        <section id="Button">
+          <h2>Go see the famous "real button"</h2>
+          <a href="button.html" style=>The button</a>
+        </section>
+
+        <section id="Pictures">
+            <h2>Pictures I've taken and Photoshopped</h2>
+              <img src="/78CE3723-83D6-40FC-A33D-F6D0EA232C90.JPEG" alt="Jacob Bailey"style="width: 200px; height: 250px;"> <img src="/Untitled design.PNG" alt="The hand one" style="width: 200px; height: 230px"> <img src="/IMG_5585.jpg" alt="new york freedom tower"style="width: 200px; height: 250px;">
+            <img src="/IMG_5730.jpeg" alt="House dont dox"style="width: 250px; height: 200px;" > <img src="/IMG_3824.jpg" alt="sn"style="width: 250px; height: 200px;" > <img src="/BOBERT.jpg" alt="Bobert my goat" style="width: 200px; height: 200px;"> <img src="/IMG_5459.jpg" alt="maine" style="width: 350px; height: 200px; ">
+       </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <!-- Add or remove your skills here -->
+                <li>Piano</li>
+                <li>Guitar</li>
+                <li>Drums</li>
+                <li>Mixing &amp; Recording</li>
+                <li>Robotics</li>
+                <li>Maya</li>
+                <li>Cooking</li>
+                <li>Photography</li>
+                <li>Video Production</li>
+                <li>Woodworking</li>
+                <li>Electronic programing and soldering</li>
+              <li>Mac User</li>
+              <li>Windows User </li>
+               
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h3>Featured Projects: Digital Media</h3>
+           
+            <div class="project">
+                <h3>Assignments made in my Digital Media Class</h3>
+                <p><a href="#">View Projects →</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Featured Projects:</h3>
+                <p>Another description for your second core project highlight. Make sure to emphasize your specific role in development.</p>
+                <p><a href="#">View Code GitHub →</a></p>
+              
+        </section>
+           
+        <section id="Inpirations">
+              <h2> My Inspirations:</h2>
+          
+
+          
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I am currently open to freelance opportunities and full-time positions. Feel free to reach out via email!</p>
+            <p style="margin-top: 15px;"><strong>Email:</strong> kipalekyle@gmail.com</p>
+            <p><strong>Spotify:</strong> linkedin.com/in/yourprofile</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Kyle Carlson. Built mostly with Gemini AI but I did a lot myself.</p>
+    </footer>
+
+
+
+</body></html>
