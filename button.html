@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Realmurrayclavus Button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f4f4f4;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 3rem; /* Made the font slightly larger */
+      font-weight: bold;
+      color: #333;
+      /* Smoothly handles transitions when styles change */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showReal()">Press me</button>
+  <div id="output"></div>
+
+  <script>
+    function showReal() {
+      const outputElement = document.getElementById("output");
+     
+      // 1. Change the text
+      outputElement.textContent = "real";
+     
+      // 2. Change text styles so it is readable over fire
+      outputElement.style.color = "white";
+      outputElement.style.textShadow = "3px 3px 6px rgba(0, 0, 0, 0.9)";
+     
+      // 3. Give the box a specific size for the background picture
+      outputElement.style.width = "300px";
+      outputElement.style.height = "200px";
+     
+      // 4. Add the explosion picture behind the text
+      outputElement.style.backgroundImage = 
+      outputElement.style.backgroundSize = "cover";
+      outputElement.style.backgroundPosition = "center";
+    }
+  </script>
+
+</body>
+</html>
