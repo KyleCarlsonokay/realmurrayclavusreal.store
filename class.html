@@ -119,19 +119,43 @@
         <p>Segregated from my other work because the personal projects pick on the school projects so I have to keep them seperate to keep them safe</p>
     </header>
 
-      <section id="Digital Media">
-        <h2>Digital Media</h2>
-          <img scr="Starter Pack.png" alt="its uh the thing" style="250px; height: 200px;" >
-          <img src="Untitled-1.png" alt="meme" style="width: 250px; height: 200px;">
-        
-          
-        </section>
+<section id="Digital Media">
+  <h2>Digital Media</h2>
+  
+  <!-- Image 1 -->
+  <img src="Start.png" alt="its uh the thing" style="width: 200px; height: 200px; cursor: pointer;" onclick="openLightbox('lightbox1')">
+  
+  <!-- Lightbox Pop-up for Image 1 -->
+  <dialog id="lightbox1" onclick="this.close()" style="border: none; border-radius: 8px; margin: auto; padding: 0; max-width: 90vw; width: min-content; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+  <img src="Start.png" style="max-width: 90vw; max-height: 75vh; display: block; object-fit: contain;">
+  <p style="text-align: center; padding: 15px 10px; margin: 0; font-size: 1rem; font-weight: 500; color: #1f4068; background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+    Started Pack made in adobe express.
+  </p>
+</dialog>
 
-      </section>
+  <!-- Image 2 -->
+  <img src="Untitled-1.png" alt="meme" style="width: 250px; height: 200px; cursor: pointer;" onclick="openLightbox('lightbox2')">
+  
+  <!-- Lightbox Pop-up for Image 2 -->
+  <dialog id="lightbox2" onclick="this.close()" style="border: none; border-radius: 8px; margin: auto; padding: 0; max-width: 90vw; width: min-content; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+  <img src="Untitled-1.png" style="max-width: 90vw; max-height: 75vh; display: block; object-fit: contain;">
+  <p style="text-align: center; padding: 15px 10px; margin: 0; font-size: 1rem; font-weight: 500; color: #1f4068; background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+    istn it so hilariour?
+  </p>
+</dialog>
+</section>
+      
 
-    <section id="Video Preodiction">
+    <section id="Video Production">
       
 
 
       
     </section>
+      <script>
+        function openLightbox(id) {
+          document.getElementById(id).showModal();
+        }
+      </script>
+
+  </body>
